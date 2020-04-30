@@ -162,7 +162,7 @@ U 1 1 5EABD11F
 P 1800 3700
 F 0 "D1" V 1839 3583 50  0000 R CNN
 F 1 "LED" V 1748 3583 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 1800 3700 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 1800 3700 50  0001 C CNN
 F 3 "~" H 1800 3700 50  0001 C CNN
 	1    1800 3700
 	0    -1   -1   0   
@@ -176,14 +176,14 @@ F 1 "2N3906" H 2390 4105 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92S_Wide" H 2400 4075 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2200 4150 50  0001 L CNN
 	1    2200 4150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5EAC5EA7
 P 2300 3700
 F 0 "R4" H 2230 3654 50  0000 R CNN
-F 1 "2k2" H 2230 3745 50  0000 R CNN
+F 1 "1k" H 2230 3745 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2230 3700 50  0001 C CNN
 F 3 "~" H 2300 3700 50  0001 C CNN
 	1    2300 3700
@@ -630,7 +630,7 @@ Wire Wire Line
 	3000 5150 3000 5200
 Connection ~ 3000 5200
 Wire Wire Line
-	3000 5200 5100 5200
+	3000 5200 3800 5200
 Wire Wire Line
 	2300 5150 2300 5200
 Connection ~ 2300 5200
@@ -712,12 +712,17 @@ Connection ~ 3050 1150
 $Comp
 L Connector:Conn_01x01_Female J3
 U 1 1 5EBA5C92
-P 3800 5400
-F 0 "J3" V 3738 5312 50  0000 R CNN
-F 1 "Conn_01x01_Female" V 3647 5312 50  0000 R CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 3800 5400 50  0001 C CNN
-F 3 "~" H 3800 5400 50  0001 C CNN
-	1    3800 5400
+P 3800 5450
+F 0 "J3" V 3738 5362 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 3647 5362 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 3800 5450 50  0001 C CNN
+F 3 "~" H 3800 5450 50  0001 C CNN
+	1    3800 5450
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3800 5250 3800 5200
+Connection ~ 3800 5200
+Wire Wire Line
+	3800 5200 5100 5200
 $EndSCHEMATC
